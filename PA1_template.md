@@ -144,7 +144,7 @@ ggplot(total_TS, aes(x=interval, y=mean_steps)) +
 
 ![](PA1_template_files/figure-html/TSPlot-1.png) 
 
-It looks like our subject usually get's up at around six in the morning, and is most active some time after that and before ten. The highest average number of steps in a five-minute interval is a bit more than 200. What is it, exactly, and in which interval does it occur?
+It looks like our subject usually gets up at around six in the morning, and is most active some time after that and before ten. The highest average number of steps in a five-minute interval is a bit more than 200. What is it, exactly, and in which interval does it occur?
 
 
 ```r
@@ -161,7 +161,7 @@ The interval with the most steps (as a daily average) is that between 8:35 and 8
 
 ## Imputing missing values
 
-We have seen in the preprocessing that there are values missing (NA) in the `steps` column, which we have excluded in the analysis steps done so far. Now we want to replace these NAs with real values to be able to include them in the analysis. The easiest way to do this - to impute these missing values - is using some kind of average as replacement. Since we have seen that there is great variablity in the number of steps taken across an average day, I would rather use the means of the five-minute intervals to replace the respective NAs, instead of daily averages, which would introduce a high number of steps also in the middle of the night.
+We have seen in the preprocessing that there are values missing (NA) in the `steps` column, which we have excluded in the analysis steps done so far. Now we want to replace these NAs with real values to be able to include them in the analysis. The easiest way to do this - to impute these missing values - is using some kind of average as replacement. Since we have seen that there is great variability in the number of steps taken across an average day, I would rather use the means of the five-minute intervals to replace the respective NAs, instead of daily averages, which would introduce a high number of steps also in the middle of the night.
 
 
 ```r
